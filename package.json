@@ -1,0 +1,39 @@
+{
+  "name": "learn-tanstack-query",
+  "homepage": "https://yudis10.github.io/learn-tanstack-query",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 3000",
+    "build": "vite build && tsc",
+    "serve": "vite preview",
+    "test": "vitest run",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.6",
+    "@tanstack/react-query": "^5.66.9",
+    "@tanstack/react-query-devtools": "^5.66.9",
+    "@tanstack/react-router": "^1.104.1",
+    "@tanstack/router-devtools": "^1.104.3",
+    "@tanstack/router-plugin": "^1.105.0",
+    "gh-pages": "^6.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.15.1",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.66.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^26.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5",
+    "web-vitals": "^4.2.4"
+  }
+}

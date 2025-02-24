@@ -6,8 +6,12 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <Outlet />
-      <ReactQueryDevtools buttonPosition="top-right" />
-      <TanStackRouterDevtools />
+      {import.meta.env.MODE === "development" && (
+        <>
+          <ReactQueryDevtools buttonPosition="top-right" />
+          <TanStackRouterDevtools />
+        </>
+      )}
     </>
   ),
 });
